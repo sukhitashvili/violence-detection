@@ -1,29 +1,28 @@
-settings:
-  model-settgins:
-    prediction-threshold: 0.5  # max value of cosine similarity can be 1
-    model-name: 'ViT-B/32'
-    device: 'cpu'
-  label-settings:
-    labels:    # labels that can be predicted if model's confidence is more than "prediction-threshold"
-      - 'people walking on a street',
-      - 'fight on a street',
-      - 'fire on a street',
-      - 'street violence',
-      - 'car parking area',
-      - 'bonfire on a street',
-      - 'car crash',
-      - 'an office',
-      - 'office environment'
-      - 'violence in office',
-      - 'fight in office'
-      - 'fire in an office',
-      - 'people talking',
-      - 'group of people',
-      - 'road',
-      - 'cars on a road'
-      - 'car lights',
-      - 'car parking',
-      - 'cars'
-      - 'building'
-    default-label:  # value to return if model's confidence is less than "prediction-threshold"
-      - 'usual view'
+model-settings:
+  prediction-threshold: 0.5  # max value of cosine similarity can be 1
+  model-name: 'ViT-B/32'
+  device: 'cpu'
+label-settings:
+  labels: # labels that can be predicted if model's confidence is more than "prediction-threshold"
+    - 'people walking on a street'
+    - 'fight on a street'
+    - 'fire on a street'
+    - 'street violence'
+    - 'car parking area'
+    - 'bonfire on a street'
+    - 'car crash'
+    - 'an office'
+    - 'office environment'
+    - 'violence in office'
+    - 'fight in office'
+    - 'fire in an office'
+    - 'people talking'
+    - 'group of people'
+    - 'road'
+    - 'cars on a road'
+    - 'car lights'
+    - 'car parking'
+    - 'cars'
+    - 'building'
+  default-label: # value to return if model's confidence is less than "prediction-threshold"
+    - 'usual view'
