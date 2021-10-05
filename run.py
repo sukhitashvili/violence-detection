@@ -1,10 +1,24 @@
+import argparse
+
+import cv2
+
+from processor import Model
+
+
+def argument_parser():
+    parser = argparse.ArgumentParser(description="Violence detection")
+    parser.add_argument('--image-path', type=str,
+                        default='./data/7.jpg',
+                        help='path to your image')
+    args = parser.parse_args()
+    return args
+
+
 if __name__ == '__main__':
-    import cv2
-    from processor import Model
+    args = argument_parser()
     model = Model()
-    image_path = './data/7.jpg'
-    image = cv2.imread(image_path)
+    image = cv2.imread(args.image_path)
     label = model.predict(image=image)
-    print('pred label: ', label)
-    cv2.imshow(label, image)
+    print('predicted label: ', label)
+    cv2.imshow(label.title(), image)
     cv2.waitKey(0)
