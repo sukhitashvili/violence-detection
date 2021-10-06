@@ -9,3 +9,4 @@ streamlit==0.89.0
 Pillow==8.3.2
 opencv-python
 pyaml
+jupyter
