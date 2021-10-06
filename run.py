@@ -2,7 +2,7 @@ import argparse
 
 import cv2
 
-from processor import Model
+from model import Model
 
 
 def argument_parser():

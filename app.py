@@ -6,7 +6,7 @@ from PIL import Image
 
 @st.cache(allow_output_mutation=True)
 def get_predictor_model():
-    from processor import Model
+    from model import Model
     model = Model()
     return model
 
