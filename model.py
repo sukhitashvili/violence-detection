@@ -65,8 +65,6 @@ class Model:
         if model_confidance >= self.threshold:
             label_text = self.labels[label_index]
 
-        print(
-            f'predicted label is "{label_text}" with confidence of: {model_confidance}')
         return label_text
 
     @staticmethod
