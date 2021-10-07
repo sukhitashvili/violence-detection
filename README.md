@@ -24,9 +24,14 @@ variety of data and can generalize well on other scenarios too.
 <a name="howtorun"/>
 
 # How to Run
+First install requirements:
+`pip install -r requirements.txt`
 
 To test the model you can either run:
 `python run.py --image-path ./data/7.jpg`
+
+Or you can test it through web app:
+`streamlit run app.py`
 
 Or you can see the example code in `tutorial.ipynb` jupyter notebook
 
@@ -38,6 +43,7 @@ import cv2
 
 model = Model()
 image = cv2.imread('./your_image.jpg')
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 label = model.predict(image=image)['label']
 print('Image label is: ', label)
 ```
@@ -45,8 +51,16 @@ print('Image label is: ', label)
 <a name="results"></a>
 # Results
 
-Below are result images with titles of model predictions. You can find code that
-produced that result in `tutorial.ipynb` jupyter notebook.
+Below are result videos and images. I used model to make predictions on each 
+frame of the videos and print model's predictions on the left side of frame of 
+saved videos. In case of images, titles are model's predictions. 
+You can find code that produces that result in `tutorial.ipynb` jupyter notebook.
+
+![Result video](./results/output_fire.gif)
+
+![Result video](./results/output_fight.gif)
+
+### Result Images
 
 ![Result image](./results/3.jpg)
 ![Result image](./results/9.jpg)
@@ -57,11 +71,12 @@ produced that result in `tutorial.ipynb` jupyter notebook.
 ![Result image](./results/0.jpg)
 
 
+
 <a name="work"></a>
 # Further Work
 
 For further enhancements like: Batch processing support for speedup, return of 
-multiple suggestions, ect. contact me:
+multiple suggestions, threshold fine-tuning for specific data, ect. contact me:
 
-My Linkedin: [link](https://www.linkedin.com/in/soso-sukhitashvili/)
+My Linkedin: [Soso Sukhitashvili](https://www.linkedin.com/in/soso-sukhitashvili/)
 
