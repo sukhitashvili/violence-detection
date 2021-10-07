@@ -60,7 +60,7 @@ produced that result in `tutorial.ipynb` jupyter notebook.
 <a name="work"></a>
 # Further Work
 
-For further improvement like: Batch processing support for speedup, return of 
+For further enhancements like: Batch processing support for speedup, return of 
 multiple suggestions, ect. contact me:
 
 My Linkedin: [link](https://www.linkedin.com/in/soso-sukhitashvili/)
