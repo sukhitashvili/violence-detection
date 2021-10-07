@@ -55,6 +55,24 @@ class Model:
 
     @torch.no_grad()
     def predict(self, image: np.array) -> dict:
+        '''
+        Does prediction on an input image
+
+        Args:
+            image (np.array): numpy image with RGB channel ordering type.
+                              Don't forget to convert to image toRGB if you
+                              read images via opencv, otherwise model is
+                              lees accurate.
+
+        Returns:
+            (dict): dict that contains predictions:
+                    {
+                    'label': 'some_label',
+                    'confidence': 0.X
+                    }
+                    confidence is calculated based on cosine similarity,
+                    thus you may see low conf. values for right predictions.
+        '''
         tf_image = self.transform_image(image)
         image_features = self.model.encode_image(tf_image)
         values, indices = self.predict_(text_features=self.text_features,
