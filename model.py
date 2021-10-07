@@ -54,7 +54,7 @@ class Model:
         return values, indices
 
     @torch.no_grad()
-    def predict(self, image: np.array) -> str:
+    def predict(self, image: np.array) -> dict:
         tf_image = self.transform_image(image)
         image_features = self.model.encode_image(tf_image)
         values, indices = self.predict_(text_features=self.text_features,
@@ -65,7 +65,12 @@ class Model:
         if model_confidance >= self.threshold:
             label_text = self.labels[label_index]
 
-        return label_text
+        prediction = {
+            'label': label_text,
+            'confidence': model_confidance
+        }
+
+        return prediction
 
     @staticmethod
     def plot_image(image: np.array, title_text: str):
