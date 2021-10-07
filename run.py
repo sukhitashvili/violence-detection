@@ -18,9 +18,7 @@ if __name__ == '__main__':
     args = argument_parser()
     model = Model()
     image = cv2.imread(args.image_path)
-    prediction = model.predict(image=image)
-    label = prediction['label']
-    conf_score = prediction['confidence']
-    print('predicted label: ', label, ' with confidence: ', conf_score)
+    label = model.predict(image=image)['label']
+    print('predicted label: ', label)
     cv2.imshow(label.title(), image)
     cv2.waitKey(0)
