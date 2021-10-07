@@ -12,11 +12,11 @@
 # Introduction
 
 This repo presents code for Deep Learning based algorithm for
-**detecting violence** in indoor or outdoor environment. The algorithm can
+**detecting violence** in indoor or outdoor environments. The algorithm can
 detect following scenarios with high accuracy: fight, fire, car crash and even
 more.
 
-To detect other scenarios you have to add **descriptive** text label of a
+To detect other scenarios you have to add **descriptive text label** of a
 scenario in `settings.yaml` file under `labels` key. At this moment model can
 detect 16`+1` scenarios, where one is default `Unknown` label. You can change,
 add or remove labels according to your use case. The model is trained on wide
