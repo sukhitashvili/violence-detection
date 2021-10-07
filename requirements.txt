@@ -7,6 +7,6 @@ torch==1.7.1
 whatimage==0.0.3
 streamlit==0.89.0
 Pillow==8.3.2
-opencv-python
+opencv-python==4.5.3.56
 pyaml
 jupyter
