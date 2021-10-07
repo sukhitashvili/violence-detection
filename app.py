@@ -21,9 +21,9 @@ with header:
 
 uploaded_file = st.file_uploader("Or choose an image...")
 if uploaded_file is not None:
-    image = Image.open(uploaded_file)
+    image = Image.open(uploaded_file).convert('RGB')
     image = np.array(image)
-    label_text = model.predict(image=image).title()
+    label_text = model.predict(image=image)['label'].title()
     st.write(f'Predicted label is: **{label_text}**')
     st.write('Original Image')
     if len(image.shape) == 3:
