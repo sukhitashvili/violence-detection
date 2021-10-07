@@ -8,8 +8,8 @@ from PIL import Image
 
 
 class Model:
-    def __init__(self, settings_file_path: str = './settings.yaml'):
-        with open(settings_file_path, "r") as file:
+    def __init__(self, settings_path: str = './settings.yaml'):
+        with open(settings_path, "r") as file:
             self.settings = yaml.safe_load(file)
 
         self.device = self.settings['model-settings']['device']
