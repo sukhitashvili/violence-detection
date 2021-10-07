@@ -4,25 +4,23 @@ model-settings:
   device: 'cpu'
 label-settings:
   labels: # labels that can be predicted if model's confidence is more than "prediction-threshold"
+    # outdoor cases
     - 'people walking on a street'
+    - 'buildings'
     - 'fight on a street'
     - 'fire on a street'
     - 'street violence'
-    - 'car parking area'
-    - 'bonfire on a street'
+    - 'road'
     - 'car crash'
-    - 'an office'
+    - 'cars on a road'
+    - 'car parking area'
+    - 'cars'
+    # indoor cases
     - 'office environment'
     - 'violence in office'
     - 'fight in office'
-    - 'fire in an office'
+    - 'fire in office'
     - 'people talking'
     - 'group of people'
-    - 'road'
-    - 'cars on a road'
-    - 'car lights'
-    - 'car parking'
-    - 'cars'
-    - 'building'
   default-label: 'Unknown' # value to return if model's confidence is less than "prediction-threshold"
 
