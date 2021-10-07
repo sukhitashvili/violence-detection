@@ -17,10 +17,12 @@ label-settings:
     - 'cars'
     # indoor cases
     - 'office environment'
+    - 'office corridor'
     - 'violence in office'
-    - 'fight in office'
     - 'fire in office'
     - 'people talking'
+    - 'people walking in office'
+    - 'person walking in office'
     - 'group of people'
   default-label: 'Unknown' # value to return if model's confidence is less than "prediction-threshold"
 
