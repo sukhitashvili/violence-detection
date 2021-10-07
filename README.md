@@ -11,7 +11,7 @@
 
 # Introduction
 
-This repo presents code for Deep learning based algorithm for
+This repo presents code for Deep Learning based algorithm for
 **detecting violence** in indoor or outdoor environment. The algorithm can
 detect following scenarios with high accuracy: fight, fire, car crash and even
 more.
