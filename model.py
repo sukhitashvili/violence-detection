@@ -60,9 +60,9 @@ class Model:
 
         Args:
             image (np.array): numpy image with RGB channel ordering type.
-                              Don't forget to convert to image toRGB if you
-                              read images via opencv, otherwise model is
-                              lees accurate.
+                              Don't forget to convert image to RGB if you
+                              read images via opencv, otherwise model's accuracy
+                              will decrease.
 
         Returns:
             (dict): dict that contains predictions:
