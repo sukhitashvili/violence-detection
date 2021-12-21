@@ -20,13 +20,14 @@ To detect other scenarios you have to add **descriptive text label** of a
 scenario in `settings.yaml` file under `labels` key. At this moment model can
 detect 16`+1` scenarios, where one is default `Unknown` label. You can change,
 add or remove labels according to your use case. The model is trained on wide
-variety of data. The task for the model at training was to predict 
-similar vectors for image and text that describes well a scene on the image.
-Thus model can generalize well on other scenarios too if you provide proper 
-textual information about a scene of interest.
+variety of data. The task for the model at training was to predict similar
+vectors for image and text that describes well a scene on the image. Thus model
+can generalize well on other scenarios too if you provide proper textual
+information about a scene of interest.
 <a name="howtorun"/>
 
 # How to Run
+
 First install requirements:
 `pip install -r requirements.txt`
 
@@ -52,12 +53,13 @@ print('Image label is: ', label)
 ```
 
 <a name="results"></a>
+
 # Results
 
-Below are result videos and images. I used model to make predictions on each 
-frame of the videos and print model's predictions on the left side of frame of 
-saved videos. In case of images, titles are model's predictions. 
-You can find code that produces that result in `tutorial.ipynb` jupyter notebook.
+Below are the resulting videos and images. I used the model to make predictions
+on each frame of the videos and print model's predictions on the left side of
+frame of saved videos. In case of images, titles are model's predictions. You
+can find code that produces that result in `tutorial.ipynb` jupyter notebook.
 
 ![Result video](./results/output_fire.gif)
 
@@ -73,13 +75,13 @@ You can find code that produces that result in `tutorial.ipynb` jupyter notebook
 ![Result image](./results/7.jpg)
 ![Result image](./results/0.jpg)
 
-
-
 <a name="work"></a>
+
 # Further Work
 
-For further enhancements like: Batch processing support for speedup, return of 
+For further enhancements like: Batch processing support for speedup, return of
 multiple suggestions, threshold fine-tuning for specific data, ect. contact me:
 
-My Linkedin: [Soso Sukhitashvili](https://www.linkedin.com/in/soso-sukhitashvili/)
+My
+Linkedin: [Soso Sukhitashvili](https://www.linkedin.com/in/soso-sukhitashvili/)
 
