@@ -97,4 +97,4 @@ class Model:
         plt.axis('off')
         if len(image.shape) == 3:
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        plt.imshow(image[..., ::-1])
+        plt.imshow(image)
