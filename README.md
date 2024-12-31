@@ -79,9 +79,5 @@ can find code that produces that result in `tutorial.ipynb` jupyter notebook.
 
 # Further Work
 
-For further enhancements like: Batch processing support for speedup, return of
-multiple suggestions, threshold fine-tuning for specific data, ect. contact me:
-
-My
-Linkedin: [Soso Sukhitashvili](https://www.linkedin.com/in/soso-sukhitashvili/)
-
+Needs further work for enhancements like: Batch processing support for speedup, return of
+multiple suggestions, threshold fine-tuning for specific data, ect.
